@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Padding and Margin</title>
+                <style>
+                    .principal{
+                        border: 1px red solid;
+                    }
+                    h1{
+                        border: 1px solid blue;
+                    }
+                    .inline{
+                        display: inline;
+                    }
+                    .block{
+                        display: block;
+                    }
+                    span{
+                        border: green 1px solid;
+                        font-size: 25px;
+                    }
+                    .inline-block{
+                        border: orange 1px solid;
+                        display: inline-block;
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="principal">
+            <h1>Bloco</h1>
+            <h1 class="inline":>Bloco mudado</h1><br><br> <!--Eu preciso do br pois o proximo elemento é inline e ele
+                 não muda de linha-->
+                <span>Inline</span>
+                <span>Inline</span>
+                <span class="block">Inline Mudado</span><br><br>
+            <span>inline normal, inline normal, inline normal, inline normal, inline normal, inline normal, inline normal,</span>
+            <span>Outro inline, Outro inline, Outro inline, Outro inline, Outro inline,</span><br><br>
+                <span class="inline-block">Inline Block</span>
+                <span class="inline-block">Outro Inline Block</span><br><br>
+            <span class="inline-block">Mais um inline block mas dessa vez vai ter até a linha ser quebrada (dar mais de uma linha) duiahdsaas aiosfcnasi fanisofasi  dfqwfqf dsfqfqefq</span>
+            <span class="inline-block">Este é outro inline block mas só depois da linha ter cido quebrada</span>
+            <h4>Pode ver que o 1° inline-block formou um quadradão entre as 2 linhas</h4>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title></title>
+                <style>
+                    /*Colunas falsas só funcionam com layout fixo*/
+                    body{
+                        background: lightgray;
+                    }
+                    .principal{
+                        width: 960px; /*alterei para um layout fixo*/
+                        margin: 0 auto;
+                        background: #fff url("imagens/coluna-falsa/coluna.png") repeat-y left top; /*mudou apenas isso*/
+                        min-width: 820px;
+                        max-width: 1280px;
+                    }
+                    .marca{
+                        height: 200px;
+                        width: 100%;
+                        background: #225992 url("imagens/imagens_liquidas/cabecalho2.jpg") no-repeat center;
+                        text-align: center;
+                        line-height: 200px;
+                    }
+                    .conteudo{
+                        width: 75%;
+                        height: auto;
+                        float: right;
+                    }
+                    .navegacao{
+                        width: 23%;
+                        float: left;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        background: #d1d1d1;
+                    }
+                    .rodape{
+                        clear: both;
+                        background: #c4c4c4;
+                        padding: 5px;
+                    }
+                    .navegacao ul{
+                        list-style: none;
+                    }
+                    .navegacao li a{
+                        text-decoration: none;
+                        display: block;
+                        padding: 2px;
+                    }
+
+                    #conteudo_primario{
+                        width: 63%;
+                        float: left;
+                    }
+
+                    #conteudo_secundario{
+                        width: 34%;
+                        float: right;
+                        background: #d1d1d1
+                    }
+
+                    img.imagem-liquida{
+                        width:96%;
+                        padding:2%;
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="principal">
+            <div class="marca">Marca</div>
+            <div class="conteudo">
+                <div id="conteudo_primario">
+                <h2>Conteúdo Primário</h2>
+                    <img src="imagens/imagens_liquidas/natureza.jpg" class="imagem-liquida">
+                <p> 
+                foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                </p>
+                </div>
+                <div id="conteudo_secundario">
+                    <h2>Conteúdo Secundário</h2>
+                <p> 
+                foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                </p>
+                </div>
+            </div>
+            <div class="navegacao">
+                <ul>
+                    <li class="home primeiro"><a href="index.html">Home</a></li>
+                    <li class="abaut"><a href="Abaut.html">Abaut</a></li>
+                    <li class="status"><a href="status.html">Status</a></li>
+                    <li class="more"><a href="more.html">More</a></li>
+                    <li class="credits"><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+            <div class="rodape">Roda Pé</div>
+        </div>
+    </body>
+</html>

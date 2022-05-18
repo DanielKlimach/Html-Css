@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Padding and Margin</title>
+                <style>
+                    .principal{
+                        width: 900px;
+                    }
+                a{
+                    text-decoration: none;
+                    background:burlywood;
+                    padding: 5px;
+                    margin:5px;
+                }
+
+                a:link{ /*links que não foram visitados*/
+                    color:green;
+                }
+                a:visited{ /*links visitados*/
+                    color:RED;
+                }
+                a:hover{ /*Quando passa o cursos por cima do link*/
+                    color:yellow;
+                    background: greenyellow;
+                }
+                a:active{ /*quando vc clica no link e ele fica selecionado
+                    pode ser com o botão direito ou clicando e segurando */
+                    color:blue;
+                }
+
+                /*
+                Eu poderia fazer assim também:
+
+                a:link, a:visited{
+                    color: green;
+                };
+                Iria formatar os dois tipos*/
+
+                </style>
+    </head>
+    <body>
+        <div class="principal">
+            <a href="https://www.google.com.br">Google</a> |
+            <a href="https://www.youtube.com.br">Youtube</a> |
+            <a href="https://www.facebook.com.br">Facebook</a>
+        </div>
+    </body>
+</html>

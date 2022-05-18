@@ -1,0 +1,99 @@
+/*Geral do site*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: arial;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'helvetica', 'sans-serif';
+    background: #e6e6e6;
+
+/*HUB*/
+}
+
+.hub{
+    background: #f7b600;
+    padding: 30px;
+    text-align: center;
+}
+
+.tecblog{
+    padding: 15px;
+    color: #4e4e4e;
+    font-size: 30px;
+}
+
+.branco{
+    color: white;
+}
+
+.opções a{
+    padding: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.opções a:hover{
+    background: #FFFFFF;
+    color: #f7b600;
+    text-decoration: none;
+}
+
+/*Conteudo*/
+
+.titulo{
+    color: #ffc400;
+}
+
+.conteudo{
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+.postagens{
+    width: 660px;
+    background: white;
+    float: left;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.lateral{
+    width:220px;
+    float: right;
+    padding: 10px;
+    background: white;
+}
+
+.links{
+    color: #f7b600;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+h3{
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
+#rodape{
+    font-weight: bold;
+    text-align: center;
+    clear: both;
+    padding: 15px;
+    background: #CCC;
+}
+
+.pLateral{
+    padding: 5px;
+    font-size: 0.8em;
+}

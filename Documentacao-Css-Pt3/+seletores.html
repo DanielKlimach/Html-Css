@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Padding and Margin</title>
+                <style>
+/*seletor de filho*/li>a{
+    background: lightblue;
+}
+/*seletor decedente*/ li p{
+    background: lightcoral;
+}
+/*seletor de irmão adjacente*/
+    h1+p{
+        background: lightseagreen;
+    }
+/*seletor de irmão geral*/
+    h2~h3{
+        background:limegreen;
+    }
+                </style>
+    </head>
+    <body>
+        <div class="principal">
+            <!--SObre seletor de filho-->
+            <ul>
+                <li>Seletor de filho</li>
+                <li><a>Seletor de filho</a></li>
+                <li>Seletor de filho</li>
+                <a> "a" fora do li</a>
+            </ul>
+            <ul>
+                <li><span><a>Esse "a" não é formatado pois o filho do li é o span</a><span></span></li>
+            </ul>
+            <hr>
+            <!--Seletor decendente-->
+            <ul>
+                <li><span><p>Só de ser decendente ele já é formatado, não precisa ser filho direto</p></span></li>
+                <li><p>filho direto também funciona</p></li>
+            </ul>
+            <hr>
+            <!--Seletor de irmão adjacente-->
+            <h1>Título</h1>
+                <p>primeiro "p" depois do "h1"</p>
+                <p>outro "p" depois do "h1"</p>
+                <p>Se tivesse algum elemento antes do p, o p não funcionaria</p>
+            </ul>
+            <hr>
+            <!--Seletor de irmão geral-->
+            <h2>TÍtulo</h2>
+                <p>um p logo em seguida do h2</p>
+                <h3>agora sim um h3, mas dessa vez ele funciona mesmo não estando ao lado</h3>
+                <h3>outro h3</h3>
+        </div>
+    </body>
+</html>

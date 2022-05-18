@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title></title>
+                <style>
+                    table{
+                        width: 600px;
+                        /* border-collapse: collapse; as bordas se juntam*/
+                    }
+                    th, td{
+                        padding: 7px;
+                    }
+                    th{
+                        text-transform: uppercase;
+                        border-top: 1px solid #999;
+                        border-bottom: 1px solid #111;
+                        text-align: left;
+                        font-size: 90%;
+                        letter-spacing: 0.1em; /*espaçamento entre as letras*/ 
+                    }
+
+                    tr.alterna{
+                       background-color: #efefef; 
+                    }
+
+                    .numeros{
+                        text-align: right;
+                    }
+
+                    tr:hover{
+                        background-color: #c3e6e5; /*pode usar o hover além dos links*/
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="principal">
+            <h2>Estilizando tabelas</h2>
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th class="numeros">Preço</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Notebook</td>
+                        <td class="numeros">R$ 2.500</td>
+                    </tr>
+                    <tr class="alterna">
+                        <td>002</td>
+                        <td>Tablet</td>
+                        <td class="numeros">R$ 1.500</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Iphone</td>
+                        <td class="numeros">R$ 3.500</td>
+                    </tr>
+                    <tr class="alterna">
+                        <td>004</td >
+                        <td>Nexus</td>
+                        <td class="numeros">R$ 3.500</td>
+                    </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+            <title>Normalize</title>
+                <link rel="stylesheet" type="text/css" href="Normalize/normalize.css"> <!--Normilize-->
+                <style>
+                    #conteudo{
+                        background: #dcdcdc;
+                        height: 400px;
+                        width: 300px;
+                        display: flex;
+
+                        /*valores da propriedade flex*/
+
+                        /*flex-direction: row, row-reverse, column, column-reverse*/
+
+                        /*flex-wrap: nowrap(padrão) não deixa os itens saírem do container
+                        principal, nem que eles sejam diminuidos
+                        wrap (só fica no container se eles caberem, eles ficam automaticamente
+                        um ao lado do outro ou embaixo do outro)
+                        wrap-reverse (exibe ao contrário*/
+
+                        /*justify-content: space-betwwen distribui o conteúdo igualmente por todo o campo
+                        space-around distribui também, mas não permite os itens ficarem colado no canto, 
+                        todos ficam igualmente distribuidos
+                        center centraliza todos eles horizontalmente*/
+
+                        /*align-items: stretch(padrão) os itens vão ocupar toda a altura possível, se n for definido um valor para tal(height)
+                        center vc centraliza eles verticalmente
+                        flex-start ficam colados no começo
+                        flex-end ficam colados no fim
+                        baseline tem uma linha superior onde todos eles ficam alinhados nela*/
+
+                    }
+
+                    .item{
+                        background: #fff;
+                        border: 1px solid gray;
+                        margin: 10px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                </style> <!--Estilo Customizado-->
+    </head>
+    <body>
+ 
+        <h1>FlexBox</h1>
+        <div id="conteudo">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+            <div class="item">05</div>
+        </div>
+    </body>
+</html>

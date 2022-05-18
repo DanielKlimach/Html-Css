@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Padding and Margin</title>
+                <style>
+                    .principal{
+                        width: 900px;
+                        background-color: lightgreen;
+                        border: red solid 4px;
+                    }
+
+                    .conteudo1{
+                        border: red solid 2px;
+                        background: lightcoral;
+                        width: 200px;
+                        height: 200px;
+                        float: left; /*O float quebra as leis da fisica hrml e fica voando sobrepondo tudo,
+                         na região que vc colcoar pode ser apenas right ou left, serve para colocar um conteudo
+                         do lado de outro, é como se fosse uma segunda dimensão para se organizar*/
+                        margin: 20px;
+                    }
+
+                    .conteudo2{
+                        border: red solid 2px;
+                        background: lightblue;
+                        width: 200px;
+                        height: 200px;
+                        float: left;
+                        margin: 20px;
+                    }
+
+                    .clear{
+                        clear: both; /*os textos ficam alterados quando usa float, a tag clear serve para
+                        corrigir isso, se eu não usar o clear em qualquer lugar
+                        o background ou outros conteúdos podem não funcionar - both é ambos esquerda e direita
+                        SEMPRE QUE USAR UM FLOAT USE DEPOIS UM CLEAR */
+        
+                    }
+
+                    p{
+                        padding-top: 20px;
+                    }
+                </style>
+    </head>
+    <body>
+        <div class="principal">    
+            <div class="conteudo1"> 
+                conteudo 1
+            </div>
+
+            <div class="conteudo2"> 
+                conteudo 2
+            </div>
+            <p>foi heqfui oqhnf qen gvqe bne qbieq nbi objm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+            <p class="clear">foi heqfui oqhnf qen gvqe bne qbieq nbi objm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+        </div>
+    </body>
+</html>

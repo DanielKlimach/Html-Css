@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+            <title>Normalize</title>
+                <link rel="stylesheet" type="text/css" href="Normalize/normalize.css"> <!--Normilize-->
+                <!--Há um problema que navegadores mais antigos nãop entendem essas tags, por isso vc deve
+                pesquisar por "html5 shiv" no google, copiar o código js e ultilizar na sua página -->
+                [if lt IE 9]
+                <script src="shiv.js"></script>
+                [end if]
+                <style>
+                    header{
+                        border: 1px solid black;
+                        background: lightgray;
+                        padding: 10px;
+                    }
+
+                    nav{
+                        border: 1px solid gray;
+                        background: lightcyan;
+                        height: 50px;
+                    }
+
+                    nav li{
+                        float: left;
+                        list-style-type: none;
+                        padding: 10px;
+                        line-height: 0px;
+                    }
+
+                    nav a{
+                        text-decoration: none;
+                    }
+
+                    footer{
+                        border: 2px solid black;
+                        background: lightcoral;
+                        padding: 5px;
+                        margin-top: 20px;
+                    }
+
+                    article{
+                        border: dashed 1px black;
+                        background: lightgoldenrodyellow;
+                        float: left;
+                        width: 650px;
+                    }
+
+                    .clear{
+                        clear:both;
+                    }
+
+                    section{
+                        float: left;
+                        border: solid 1px lightgray;
+                        height: 165px;
+                        width: 300px;
+                        margin: 10px;
+                        background: lightsteelblue;
+                    }
+
+                    section a{
+                        color: gold;
+                        text-decoration: none;
+                    }
+
+                    data{
+                        font-size: 12px;
+                        font-style: italic;
+                        margin-left: 5px;
+                    }
+
+                    aside{
+                        float: right;
+                        width: 150px;
+                        border: black solid 1px;
+                        background:lightskyblue;
+                        margin: 10px;
+                        padding: 5px;
+                    }
+                </style> <!--Estilo Customizado-->
+    </head>
+    <body>
+        <header>
+            <h1>Título</h1>
+            <h3> Logo Aleatório de Título</h3>
+        </header> 
+
+
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SOBRE</a></li>
+                <li><a href="">MAIS</a></li>
+            </ul>
+        </nav>
+
+
+        <article> <!--Serve para as postagens do site ou informações sobre a empresa-->
+            <h2>Postagem:</h2>
+
+            <section>
+                <h3><a href="">Curso de Programação</a></h3> <!--Coloca dentro do articlo, são seções dentro da postagem-->
+                <p>
+                    foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                    foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                </p>
+                <data>27/02/2022</data> <!--Serve para colocar datas-->
+            </section>
+
+            <section> <!--Pode ter vários sections-->
+                <h3><a href="">Curso de Elétrica</a></h3> <!--Coloca dentro do articlo, são seções dentro da postagem-->
+                <p>
+                    foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                    foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                </p>
+                <data>27/02/2022</data>
+            </section>
+
+        </article>
+        <aside> <!--Serve para conteúdos laterais-->
+            <h2>Sobre o Autor</h2>
+            <p>
+                foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+            </p>
+        </aside>
+        <div class="clear"></div>
+
+
+        <footer>
+            &copy Direitos Rezervados para Daniel Klimach
+        </footer>
+    </body>
+</html>

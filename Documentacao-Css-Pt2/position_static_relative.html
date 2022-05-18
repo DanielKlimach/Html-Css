@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Posicionamentos (static, relative, abolute e fixed)</title>
+                <style>
+                    body{
+                        background: #007fc7;
+                    }
+
+                    #container{
+                        background: #fff;
+                        width: 800px;
+                        margin: 10px auto;
+                        padding: 10px;
+                    }
+
+                    h1{
+                        position: static; /*Posicionamento stático é o padrão*/
+                    }
+
+                    p{
+                        width: 300px;
+                    }
+
+                    .relative{
+                        border: 1px solid red;
+                        position: relative; /*paragrafos com position relative
+                        vc pode os movimentar*/
+                        left: 80px; /*agora eu posso ir deslocando meu elemento
+                        baseado na posição inicial que ele tinha no padrão*/
+                        top: -20px; /*posso usar números negativos, então
+                        se moverá para o outro lado, facilitando o sentido*/
+                    }
+                </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Titulo</h1>
+            <p> 
+                P1 - heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+            <p class="relative"> 
+                P2 - heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+            <p> 
+                P3 - heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+        </div>
+    </body>
+</html>

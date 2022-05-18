@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+            <title>Normalize</title>
+                <link rel="stylesheet" type="text/css" href="Normalize/normalize.css"> <!--Normilize-->
+                <style>
+                    #conteudo{
+                        background: #dcdcdc;
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                    }
+
+                    .item{
+                        background: #fff;
+                        border: 1px solid gray;
+                        margin: 10px;
+                        width: 200px;
+                        height: 100px;
+                    }
+
+                    .item1{
+                        flex-grow: 1; /*faz preencher tudo possível, o 0 é o pad~rao que não preenche tudo automaticamente
+                        vocÇe também pode colocar em vários item, quanto maior a numeração maior será o item em relação ao outro
+                        ex: item1 grow: 1 item2 grow: 2, logo o item2 tem o dobro do tamanho do item1*/
+                    }
+
+                    #ordem1{
+                        order: 1;
+                    }
+                    #ordem2{
+                        order: 2;
+                    }
+                    #ordem3{
+                        order: 3;
+                    }
+
+                    #ordem4{
+                        order: 4;
+                    }
+
+
+                </style> <!--Estilo Customizado-->
+    </head>
+    <body>
+ 
+        <h1>FlexBox</h1>
+        <div id="conteudo">
+            <div class="item item1" id="ordem4">01</div>
+            <div class="item" id="ordem3">02</div>
+            <div class="item" id="ordem2">03</div>
+            <div class="item" id="ordem1">04</div>
+        </div>
+    </body>
+</html>

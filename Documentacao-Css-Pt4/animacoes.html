@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+            <title>Normalize</title>
+                <link rel="stylesheet" type="text/css" href="Normalize/normalize.css"> <!--Normilize-->
+                <style>
+                    @keyframes animacao-caixa {
+                        from{
+                            background: red; /*pode usar diversas outras propriedades para animação,
+                            como border, font, o que quiser, como o border radius*/
+                            border-radius: 0%;
+                        }
+                        to{
+                            background: green;
+                         /*essa é a estrutura da animação. Agora é só usa-lá em alguma tag*/
+                        border-radius: 50%;
+                        }
+                    }
+
+                    @keyframes movimentacao-caixa{
+                        from{
+                            left:0%;
+                        }
+                        to{
+                            left:75%;
+                        }
+                    }
+                    .p1{
+                        width: 300px;
+                        height: 300px;
+                        padding: 10px;
+                        margin: 20px;
+                        background: red;
+                        animation-name: animacao-caixa;
+                        animation-duration: 5s; /*defini a animação em cima e o tempo dela aqui*/
+                        animation-delay: 3s; /*leva 3 segundos para começar, opcional, apenas as 2 de cima são
+                        obrigatórias*/
+                        animation-iteration-count: infinite; /*quantas vezes quero que seja execultada
+                        posso colocar números também - padrão: 1*/
+                        animation-direction: alternate; /*o nome já diz tudo, olhe depois as opções que tem no complemento*/
+
+                        /*posso colocar todos os parâmetros que eu quiser nessa tag*/
+                        animation: animacao-caixa 5s 3s infinite alternate;
+                    }
+
+                    .p2{
+                        width: 300px;
+                        height: 300px;
+                        padding: 10px;
+                        margin: 20px;
+                        background: red;
+                        position: relative; /*para tornar possivel usar a tag left*/
+                        animation: movimentacao-caixa 10s 3s infinite alternate;
+                    }
+                </style> <!--Estilo Customizado-->
+    </head>
+    <body>
+        <div class="p1">
+            <h1>Título da Caixa</h1>
+            <p> 
+                foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+        </div>
+        <div class="p2">
+            <h1>Título da Caixa 2</h1>
+            <p> 
+                foi heqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib neib enb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+                foih eqfui oqhnf qengvqe bne qbieq nbiobjm eibne ibnio qen bib eib nei benb
+            </p>
+        </div>
+    </body>
+</html>
